@@ -16,10 +16,10 @@ jobs:
       env:
         NODE_ENV: test
     env:
-      MONGODB_CONNECTION_PROTOCOL: mongodb+srv
-      MONGODB_CLUSTER_ADDRESS: mongodb
-      MONGODB_USERNAME: mongodb
-      MONGODB_PASSWORD: examplepassword
+      MONGODB_CONNECTION_PROTOCOL: mongodb
+      MONGODB_CLUSTER_ADDRESS: mongodb # using the default hostname for the MongoDB service defined below
+      MONGODB_USERNAME: root
+      MONGODB_PASSWORD: example
       PORT: 8080
     services:
       mongodb:
